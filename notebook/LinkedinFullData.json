@@ -1,5 +1,5 @@
 {
-	"name": "Notebook 1",
+	"name": "LinkedinFullData",
 	"properties": {
 		"description": "test",
 		"nbformat": 4,
@@ -14,7 +14,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "eecfe47a-87a2-4649-88fb-ead7c719f8f8"
+				"spark.autotune.trackingId": "268410f8-c5c2-4686-b3ef-168f03172830"
 			}
 		},
 		"metadata": {
