@@ -14,7 +14,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "c808ed9d-0c38-4e85-b2a4-18293d5cb148"
+				"spark.autotune.trackingId": "eecfe47a-87a2-4649-88fb-ead7c719f8f8"
 			}
 		},
 		"metadata": {
@@ -46,6 +46,24 @@
 					"from urllib import parse, response\r\n",
 					"from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient\r\n",
 					"from io import StringIO"
+				],
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"csv_buffer = StringIO()"
 				],
 				"execution_count": null
 			}
