@@ -1,0 +1,54 @@
+{
+	"name": "Notebook 1",
+	"properties": {
+		"description": "test",
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "c808ed9d-0c38-4e85-b2a4-18293d5cb148"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "python"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"#!/usr/local/bin/python3\r\n",
+					"# command to run this code $ python3 ./linkedin_main.py -f 2023-11-05 -t 2023-11-05\r\n",
+					"import getopt\r\n",
+					"import sys\r\n",
+					"import os.path\r\n",
+					"import requests\r\n",
+					"import pandas as pd\r\n",
+					"import json\r\n",
+					"from datetime import datetime, timedelta\r\n",
+					"import re\r\n",
+					"from urllib import parse, response\r\n",
+					"from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient\r\n",
+					"from io import StringIO"
+				],
+				"execution_count": null
+			}
+		]
+	}
+}
