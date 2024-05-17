@@ -101,7 +101,53 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "83c5f1d9-3dde-4f28-a6af-7efeda544b5c"
+						"spark.autotune.trackingId": "eb3bdb34-0143-4c5b-abd0-701d2ac55b70"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"enableDebugMode": false,
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "python"
+					},
+					"language_info": {
+						"name": "python"
+					},
+					"sessionKeepAliveTimeout": 30
+				},
+				"cells": [
+					{
+						"cell_type": "code",
+						"source": [
+							"print(\"test\")"
+						],
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Notebook 1')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"description": "test",
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"sessionProperties": {
+					"driverMemory": "28g",
+					"driverCores": 4,
+					"executorMemory": "28g",
+					"executorCores": 4,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2",
+						"spark.autotune.trackingId": "91773702-0d71-4d01-8834-d3a6e37ff4f8"
 					}
 				},
 				"metadata": {
@@ -121,7 +167,19 @@
 						"cell_type": "code",
 						"metadata": {},
 						"source": [
-							"print(\"test\")"
+							"#!/usr/local/bin/python3\r\n",
+							"# command to run this code $ python3 ./linkedin_main.py -f 2023-11-05 -t 2023-11-05\r\n",
+							"import getopt\r\n",
+							"import sys\r\n",
+							"import os.path\r\n",
+							"import requests\r\n",
+							"import pandas as pd\r\n",
+							"import json\r\n",
+							"from datetime import datetime, timedelta\r\n",
+							"import re\r\n",
+							"from urllib import parse, response\r\n",
+							"from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient\r\n",
+							"from io import StringIO"
 						],
 						"outputs": [],
 						"execution_count": null
